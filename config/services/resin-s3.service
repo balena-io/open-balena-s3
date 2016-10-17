@@ -1,0 +1,8 @@
+[Unit]
+Description=resin-s3
+
+[Service]
+ExecStart=/go/bin/minio server --address ":80" /export
+
+[Install]
+WantedBy=basic.target
