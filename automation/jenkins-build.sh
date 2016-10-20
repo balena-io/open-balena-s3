@@ -5,14 +5,14 @@ VERSION=$(git rev-parse --short HEAD)
 ESCAPED_BRANCH_NAME=$(echo $sourceBranch | sed 's/[^a-z0-9A-Z_.-]/-/g')
 
 # Try pulling the old build first for caching purposes.
-docker pull resin/${JOB_NAME}:${ESCAPED_BRANCH_NAME} || docker pull resin/${JOB_NAME}:master || true
+docker pull resin/resin-s3-minio:${ESCAPED_BRANCH_NAME} || docker pull resin/resin-s3-minio:master || true
 
-docker build --pull --tag resin/${JOB_NAME}:${VERSION} .
+docker build --pull --tag resin/resin-s3-minio:${VERSION} .
 
-docker tag --force resin/${JOB_NAME}:${VERSION} resin/${JOB_NAME}:${ESCAPED_BRANCH_NAME}
-docker tag --force resin/${JOB_NAME}:${VERSION} resin/${JOB_NAME}:latest
+docker tag --force resin/resin-s3-minio:${VERSION} resin/resin-s3-minio:${ESCAPED_BRANCH_NAME}
+docker tag --force resin/resin-s3-minio:${VERSION} resin/resin-s3-minio:latest
 
 # Push the images
-docker push resin/${JOB_NAME}:${VERSION}
-docker push resin/${JOB_NAME}:${ESCAPED_BRANCH_NAME}
-docker push resin/${JOB_NAME}:latest
+docker push resin/resin-s3-minio:${VERSION}
+docker push resin/resin-s3-minio:${ESCAPED_BRANCH_NAME}
+docker push resin/resin-s3-minio:latest
