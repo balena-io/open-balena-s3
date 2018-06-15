@@ -4,17 +4,17 @@ EXPOSE 80
 
 VOLUME /export
 
-ENV GO_VERSION 1.8.3
-ENV GO_SHA1 838c415896ef5ecd395dfabde5e7e6f8ac943c8e
+ENV GO_VERSION 1.10.3
+ENV GO_SHA256 fa1b0e45d3b647c252f51f5e1204aba049cde4af177ef9f2181f43004f901035
 ENV PATH ${PATH}:/usr/local/go/bin
 ENV GOPATH /go
 
 # Get Go and Minio
 RUN curl -SLO https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz && \
-    echo "${GO_SHA1} go${GO_VERSION}.linux-amd64.tar.gz" > go${GO_VERSION}.linux-amd64.tar.gz.sha1sum && \
-    sha1sum -c go${GO_VERSION}.linux-amd64.tar.gz.sha1sum && \
+    echo "${GO_SHA256} go${GO_VERSION}.linux-amd64.tar.gz" > go${GO_VERSION}.linux-amd64.tar.gz.sha256sum && \
+    sha256sum -c go${GO_VERSION}.linux-amd64.tar.gz.sha256sum && \
     tar xz -C /usr/local -f go${GO_VERSION}.linux-amd64.tar.gz && \
-    rm go${GO_VERSION}.linux-amd64.tar.gz go${GO_VERSION}.linux-amd64.tar.gz.sha1sum && \
+    rm go${GO_VERSION}.linux-amd64.tar.gz go${GO_VERSION}.linux-amd64.tar.gz.sha256sum && \
     go get -u github.com/minio/minio
 
 # systemd and minio config
