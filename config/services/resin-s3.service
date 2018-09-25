@@ -2,6 +2,8 @@
 Description=resin-s3
 
 [Service]
+StandardOutput=journal+console
+StandardError=journal+console
 ExecStart=/go/bin/minio server --address ":80" /export
 
 [Install]
