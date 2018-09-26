@@ -1,4 +1,5 @@
-FROM resin/resin-base:v4.4.0
+FROM resin/resin-base:v4.4.1
+
 EXPOSE 80
 
 VOLUME /export
