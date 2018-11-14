@@ -22,4 +22,4 @@ COPY config/services/ /etc/systemd/system/
 COPY config/config.json /root/.minio/config.json
 
 # Enable Minio service
-RUN systemctl enable resin-s3.service
+RUN systemctl enable open-balena-s3.service
