@@ -1,5 +1,5 @@
 [Unit]
-Description=resin-s3
+Description=open-balena-s3
 
 [Service]
 StandardOutput=journal+console
