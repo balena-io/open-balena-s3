@@ -1,8 +1,8 @@
 {
 	"version": "9",
 	"credential": {
-		"accessKey": "abcdef1234",
-		"secretKey": "1234567890"
+		"accessKey": "{{getenv "S3_MINIO_ACCESS_KEY"}}",
+		"secretKey": "{{getenv "S3_MINIO_SECRET_KEY"}}"
 	},
 	"region": "us-east-1",
 	"logger": {
