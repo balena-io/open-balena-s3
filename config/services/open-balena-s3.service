@@ -1,5 +1,7 @@
 [Unit]
 Description=open-balena-s3
+Requires=confd.service
+After=confd.service
 
 [Service]
 StandardOutput=journal+console
