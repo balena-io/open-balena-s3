@@ -18,7 +18,7 @@ RUN curl -SLO https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.
     go get -u github.com/minio/minio
 
 # systemd and minio config
-RUN mkdir -p /root/.minio
+RUN mkdir -p /export/.minio.sys/config
 COPY config /usr/src/app/config
 COPY config/services/ /etc/systemd/system/
 
