@@ -6,6 +6,8 @@ After=confd.service
 [Service]
 StandardOutput=journal+console
 StandardError=journal+console
+ExecStartPre=/bin/mkdir -p /export/.minio.sys/config
+ExecStartPre=/bin/cp /usr/src/app/minio-config.json /export/.minio.sys/config/config.json
 ExecStart=/go/bin/minio server --address ":80" /export
 
 [Install]
