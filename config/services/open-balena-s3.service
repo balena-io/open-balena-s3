@@ -9,6 +9,8 @@ StandardError=journal+console
 ExecStartPre=/bin/mkdir -p /export/.minio.sys/config
 ExecStartPre=/bin/cp /usr/src/app/minio-config.json /export/.minio.sys/config/config.json
 ExecStart=/go/bin/minio server --address ":80" /export
+Restart=always
+StartLimitIntervalSec=0
 
 [Install]
 WantedBy=basic.target
