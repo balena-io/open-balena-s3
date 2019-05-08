@@ -4,8 +4,8 @@ EXPOSE 80
 
 VOLUME /export
 
-ENV GO_VERSION 1.10.3
-ENV GO_SHA256 fa1b0e45d3b647c252f51f5e1204aba049cde4af177ef9f2181f43004f901035
+ENV GO_VERSION 1.12.5
+ENV GO_SHA256 aea86e3c73495f205929cfebba0d63f1382c8ac59be081b6351681415f4063cf
 ENV PATH ${PATH}:/usr/local/go/bin
 ENV GOPATH /go
 
@@ -15,7 +15,8 @@ RUN curl -SLO https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.
     sha256sum -c go${GO_VERSION}.linux-amd64.tar.gz.sha256sum && \
     tar xz -C /usr/local -f go${GO_VERSION}.linux-amd64.tar.gz && \
     rm go${GO_VERSION}.linux-amd64.tar.gz go${GO_VERSION}.linux-amd64.tar.gz.sha256sum && \
-    go get -u github.com/minio/minio
+    GO111MODULE=on go get github.com/minio/minio && \
+    rm -rf /go/pkg
 
 # systemd and minio config
 COPY config /usr/src/app/config
