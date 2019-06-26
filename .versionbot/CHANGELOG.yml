@@ -1,329 +1,346 @@
 - commits:
-  - author: Pagan Gazzard
-    body: Update open-balena-base from 7.2.1 to 7.2.2
-    footers:
-      change-type: patch
-    hash: 7f8497d08fa9c5e85d28cabf3cb8780332d98dbe
-    subject: Update open-balena-base to 7.2.2
-  date: "2019-06-20T13:06:28Z"
+    - subject: Add machine-readable changelog
+      hash: 97ce8cb8202616c43d0a1b86433da5f16ccdc873
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Gergely Imreh <gergely@balena.io>
+        signed-off-by: Gergely Imreh <gergely@balena.io>
+      author: Gergely Imreh
+  version: 2.7.3
+  date: 2019-06-26T13:22:34.187Z
+- commits:
+    - author: Pagan Gazzard
+      body: Update open-balena-base from 7.2.1 to 7.2.2
+      footers:
+        change-type: patch
+      hash: 7f8497d08fa9c5e85d28cabf3cb8780332d98dbe
+      subject: Update open-balena-base to 7.2.2
+  date: '2019-06-20T13:06:28Z'
   version: 2.7.2
 - commits:
-  - author: Pagan Gazzard
-    body: Update open-balena-base from 7.2.0 to 7.2.1
-    footers:
-      change-type: patch
-    hash: 4173d327e2deee87f07f5e6617c0595a8f423c44
-    subject: Update open-balena-base to 7.2.1
-  date: "2019-06-07T11:28:31Z"
+    - author: Pagan Gazzard
+      body: Update open-balena-base from 7.2.0 to 7.2.1
+      footers:
+        change-type: patch
+      hash: 4173d327e2deee87f07f5e6617c0595a8f423c44
+      subject: Update open-balena-base to 7.2.1
+  date: '2019-06-07T11:28:31Z'
   version: 2.7.1
 - commits:
-  - author: Pagan Gazzard
-    body: Update open-balena-base from 7.0.2 to 7.2.0
-    footers:
-      change-type: minor
-    hash: 94af779af62bad3db3ba6fce606c82652321de10
-    subject: Update open-balena-base to 7.2.0
-  date: "2019-05-29T14:47:05Z"
+    - author: Pagan Gazzard
+      body: Update open-balena-base from 7.0.2 to 7.2.0
+      footers:
+        change-type: minor
+      hash: 94af779af62bad3db3ba6fce606c82652321de10
+      subject: Update open-balena-base to 7.2.0
+  date: '2019-05-29T14:47:05Z'
   version: 2.7.0
 - commits:
-  - author: Pagan Gazzard
-    body: Update open-balena-base from 7.0.0 to 7.0.2
-    footers:
-      change-type: patch
-    hash: ac03a84b3809c0373ec528040bf4bea5fdf20657
-    subject: Update open-balena-base to 7.0.2
-  - author: Pagan Gazzard
-    body: ""
-    footers:
-      change-type: patch
-    hash: 82314334a9dadacf5f33498de9e532aa495b8f4e
-    subject: Disable the service start limit
-  date: "2019-05-08T13:44:22Z"
+    - author: Pagan Gazzard
+      body: Update open-balena-base from 7.0.0 to 7.0.2
+      footers:
+        change-type: patch
+      hash: ac03a84b3809c0373ec528040bf4bea5fdf20657
+      subject: Update open-balena-base to 7.0.2
+    - author: Pagan Gazzard
+      body: ''
+      footers:
+        change-type: patch
+      hash: 82314334a9dadacf5f33498de9e532aa495b8f4e
+      subject: Disable the service start limit
+  date: '2019-05-08T13:44:22Z'
   version: 2.6.4
 - commits:
-  - author: Heds Simons
-    body: |-
-      Minio build requirements have been updated to Go 1.12.x,
-      and dependencies should no longer be updated.
-    footers:
-      change-type: patch
-      connects-to: '#42'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 5774d79c94453fd958675528142fb2d44e0a1e37
-    subject: 'build: Ensure Minio build requirements are up-to-date'
-  date: "2019-05-08T12:15:58Z"
+    - author: Heds Simons
+      body: |-
+        Minio build requirements have been updated to Go 1.12.x,
+        and dependencies should no longer be updated.
+      footers:
+        change-type: patch
+        connects-to: '#42'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 5774d79c94453fd958675528142fb2d44e0a1e37
+      subject: 'build: Ensure Minio build requirements are up-to-date'
+  date: '2019-05-08T12:15:58Z'
   version: 2.6.3
 - commits:
-  - author: Heds Simons
-    body: |-
-      Ensure that:
-      1. Config is written to pre-existing dir by confd
-      2. Minio config dir is created on volume mount
-      3. Config is copied to Minio config dir
-    footers:
-      change-type: patch
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 5e159555b0198193ccb73dbbbd892532613029af
-    subject: 'config: Ensure config directory is created in-service'
-  date: "2019-05-03T14:23:53Z"
+    - author: Heds Simons
+      body: |-
+        Ensure that:
+        1. Config is written to pre-existing dir by confd
+        2. Minio config dir is created on volume mount
+        3. Config is copied to Minio config dir
+      footers:
+        change-type: patch
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 5e159555b0198193ccb73dbbbd892532613029af
+      subject: 'config: Ensure config directory is created in-service'
+  date: '2019-05-03T14:23:53Z'
   version: 2.6.2
 - commits:
-  - author: Heds Simons
-    body: |-
-      With the new version of Minio, this change is required
-      to correctly pick up config credentials.
-    footers:
-      change-type: patch
-      connects-to: '#38'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 1b91d2858a617310f5d7238826bfbfdaabda399b
-    subject: 'config: Esure config file is stored in exports'
-  date: "2019-05-03T10:12:05Z"
+    - author: Heds Simons
+      body: |-
+        With the new version of Minio, this change is required
+        to correctly pick up config credentials.
+      footers:
+        change-type: patch
+        connects-to: '#38'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 1b91d2858a617310f5d7238826bfbfdaabda399b
+      subject: 'config: Esure config file is stored in exports'
+  date: '2019-05-03T10:12:05Z'
   version: 2.6.1
 - commits:
-  - author: Heds Simons
-    body: |-
-      Ensures that the Minio access and secret keys can
-      be configured via a pair of envvars.
-    footers:
-      change-type: minor
-      connects-to: '#27'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 627f8a57317d013b5aa4c6cc0d4d41cafe5adf59
-    subject: 'config: Allow configurable credentials'
-  date: "2019-05-02T16:57:57Z"
+    - author: Heds Simons
+      body: |-
+        Ensures that the Minio access and secret keys can
+        be configured via a pair of envvars.
+      footers:
+        change-type: minor
+        connects-to: '#27'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 627f8a57317d013b5aa4c6cc0d4d41cafe5adf59
+      subject: 'config: Allow configurable credentials'
+  date: '2019-05-02T16:57:57Z'
   version: 2.6.0
 - commits:
-  - author: Roman Mazur
-    body: ""
-    footers:
-      change-type: patch
-      signed-off-by: Roman Mazur <mazur.roman@gmail.com>
-    hash: 43e562b59d325f2dae84d36685a7e635b7b2eba9
-    subject: 'readme: Fix link formatting'
-  date: "2019-04-16T15:37:32Z"
+    - author: Roman Mazur
+      body: ''
+      footers:
+        change-type: patch
+        signed-off-by: Roman Mazur <mazur.roman@gmail.com>
+      hash: 43e562b59d325f2dae84d36685a7e635b7b2eba9
+      subject: 'readme: Fix link formatting'
+  date: '2019-04-16T15:37:32Z'
   version: 2.5.1
 - commits:
-  - author: Heds Simons
-    body: ""
-    footers:
-      change-type: minor
-      connects-to: '#34'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 409c7d8a7e29f2940fe2bc9849db2f7796e87e2a
-    subject: 'open-balena-base: Update open-balena-base to v7.0.0'
-  date: "2019-03-14T17:14:22Z"
+    - author: Heds Simons
+      body: ''
+      footers:
+        change-type: minor
+        connects-to: '#34'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 409c7d8a7e29f2940fe2bc9849db2f7796e87e2a
+      subject: 'open-balena-base: Update open-balena-base to v7.0.0'
+  date: '2019-03-14T17:14:22Z'
   version: 2.5.0
 - commits:
-  - author: Heds Simons
-    body: ""
-    footers:
-      change-type: minor
-      connects-to: '#32'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 43062bb5b9a1c8341f21fc7906e4045032df2598
-    subject: 'open-balena-base: Update open-balena-base to v6.0.0'
-  date: "2019-03-12T11:22:59Z"
+    - author: Heds Simons
+      body: ''
+      footers:
+        change-type: minor
+        connects-to: '#32'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 43062bb5b9a1c8341f21fc7906e4045032df2598
+      subject: 'open-balena-base: Update open-balena-base to v6.0.0'
+  date: '2019-03-12T11:22:59Z'
   version: 2.4.0
 - commits:
-  - author: Heds Simons
-    body: ""
-    footers:
-      change-type: patch
-      connects-to: '#30'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 72beba7802d6c802e83be06f498c73e0912ccbe5
-    subject: 'codeowners: Add @hedss, @dfunckt & @wrboyce'
-  date: "2019-03-09T13:15:44Z"
+    - author: Heds Simons
+      body: ''
+      footers:
+        change-type: patch
+        connects-to: '#30'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 72beba7802d6c802e83be06f498c73e0912ccbe5
+      subject: 'codeowners: Add @hedss, @dfunckt & @wrboyce'
+  date: '2019-03-09T13:15:44Z'
   version: 2.3.1
 - commits:
-  - author: Pagan Gazzard
-    body: ""
-    footers:
-      change-type: minor
-    hash: 2b0a73da7774c8f571c0cc402823cc632db59238
-    subject: Update open-balena-base to v5.3.1
-  date: "2019-03-06T18:04:49Z"
+    - author: Pagan Gazzard
+      body: ''
+      footers:
+        change-type: minor
+      hash: 2b0a73da7774c8f571c0cc402823cc632db59238
+      subject: Update open-balena-base to v5.3.1
+  date: '2019-03-06T18:04:49Z'
   version: 2.3.0
 - commits:
-  - author: Akis Kesoglou
-    body: ""
-    footers:
-      change-type: minor
-    hash: 04106a7889c8df9a3c8621377dbd9110cd75f81b
-    subject: Complete rename to open-balena-s3
-  date: "2018-11-14T19:31:55Z"
+    - author: Akis Kesoglou
+      body: ''
+      footers:
+        change-type: minor
+      hash: 04106a7889c8df9a3c8621377dbd9110cd75f81b
+      subject: Complete rename to open-balena-s3
+  date: '2018-11-14T19:31:55Z'
   version: 2.2.0
 - commits:
-  - author: Pagan Gazzard
-    body: ""
-    footers:
-      change-type: minor
-    hash: b365e607077846222b915c0ecd69b7bff5238f2c
-    subject: Update to open-balena-base 5.0.0, including nodejs 10
-  date: "2018-10-30T15:54:14Z"
+    - author: Pagan Gazzard
+      body: ''
+      footers:
+        change-type: minor
+      hash: b365e607077846222b915c0ecd69b7bff5238f2c
+      subject: 'Update to open-balena-base 5.0.0, including nodejs 10'
+  date: '2018-10-30T15:54:14Z'
   version: 2.1.0
 - commits:
-  - author: Akis Kesoglou
-    body: ""
-    footers:
-      change-type: patch
-    hash: 5f4af72a73adee9353eb7ee389a1c25a5894e7af
-    subject: Add LICENSE
-  - author: Akis Kesoglou
-    body: ""
-    footers:
-      change-type: patch
-    hash: 3b5d127f8defd7822fd822c3c9aa4512176db9f6
-    subject: Stop publishing image to private Docker Hub repo
-  date: "2018-10-29T15:29:06Z"
+    - author: Akis Kesoglou
+      body: ''
+      footers:
+        change-type: patch
+      hash: 5f4af72a73adee9353eb7ee389a1c25a5894e7af
+      subject: Add LICENSE
+    - author: Akis Kesoglou
+      body: ''
+      footers:
+        change-type: patch
+      hash: 3b5d127f8defd7822fd822c3c9aa4512176db9f6
+      subject: Stop publishing image to private Docker Hub repo
+  date: '2018-10-29T15:29:06Z'
   version: 2.0.4
 - commits:
-  - author: Heds Simons
-    body: ""
-    footers:
-      change-type: patch
-      connects-to: '#21'
-      signed-off-by: Heds Simons <heds@balena.io>
-    hash: 1be45032202fd1faa83b6c871cc812c358ed5e97
-    subject: 'base: Update resin-base version to autoset subdomain envvars'
-  date: "2018-10-26T13:35:44Z"
+    - author: Heds Simons
+      body: ''
+      footers:
+        change-type: patch
+        connects-to: '#21'
+        signed-off-by: Heds Simons <heds@balena.io>
+      hash: 1be45032202fd1faa83b6c871cc812c358ed5e97
+      subject: 'base: Update resin-base version to autoset subdomain envvars'
+  date: '2018-10-26T13:35:44Z'
   version: 2.0.3
 - commits:
-  - author: Will Boyce
-    body: ""
-    footers:
-      change-type: patch
-      signed-off-by: Will Boyce <will@balena.io>
-    hash: d81888b45502b1cb7c2d61b588ffc52ccfe34d40
-    subject: 'rename: Publish Docker image to both balena and resin accounts'
-  - author: Will Boyce
-    body: ""
-    footers:
-      change-type: patch
-      signed-off-by: Will Boyce <will@balena.io>
-    hash: 944c00b4cc038594ce3fb020ae765078a28ce1bb
-    subject: 'rename: Use `balena/open-balena-base` base image'
-  date: "2018-10-25T20:36:40Z"
+    - author: Will Boyce
+      body: ''
+      footers:
+        change-type: patch
+        signed-off-by: Will Boyce <will@balena.io>
+      hash: d81888b45502b1cb7c2d61b588ffc52ccfe34d40
+      subject: 'rename: Publish Docker image to both balena and resin accounts'
+    - author: Will Boyce
+      body: ''
+      footers:
+        change-type: patch
+        signed-off-by: Will Boyce <will@balena.io>
+      hash: 944c00b4cc038594ce3fb020ae765078a28ce1bb
+      subject: 'rename: Use `balena/open-balena-base` base image'
+  date: '2018-10-25T20:36:40Z'
   version: 2.0.2
 - commits:
-  - author: Heds Simons
-    body: |-
-      Updates `resin-base` to ensure DNS is prioritised
-      over MDNS, ensuring `.local` aliases are resolved
-      before those published on the local subnet.
-    footers:
-      change-type: patch
-      connects-to: '#18'
-      signed-off-by: Heds Simons <heds@resin.io>
-    hash: 59e0472594e8ffa5e1e738a5cfd491119c3c6ff6
-    subject: 'dns: Ensure DNS is prioritised over MDNS'
-  date: "2018-09-28T13:03:00Z"
+    - author: Heds Simons
+      body: |-
+        Updates `resin-base` to ensure DNS is prioritised
+        over MDNS, ensuring `.local` aliases are resolved
+        before those published on the local subnet.
+      footers:
+        change-type: patch
+        connects-to: '#18'
+        signed-off-by: Heds Simons <heds@resin.io>
+      hash: 59e0472594e8ffa5e1e738a5cfd491119c3c6ff6
+      subject: 'dns: Ensure DNS is prioritised over MDNS'
+  date: '2018-09-28T13:03:00Z'
   version: 2.0.1
 - commits:
-  - author: Akis Kesoglou
-    body: |-
-      This commit:
-      - starts pushing to open-balena-s3 repo
-      - stops pushing to legacy Docker Hub repo
-      - removes CircleCI config
-    footers:
-      change-type: major
-      signed-off-by: Akis Kesoglou <akis@resin.io>
-    hash: a80de421a93a21d64bd2b4837345946c1a1a3a15
-    subject: Prepare for open sourcing
-  date: "2018-09-28T07:19:09Z"
+    - author: Akis Kesoglou
+      body: |-
+        This commit:
+        - starts pushing to open-balena-s3 repo
+        - stops pushing to legacy Docker Hub repo
+        - removes CircleCI config
+      footers:
+        change-type: major
+        signed-off-by: Akis Kesoglou <akis@resin.io>
+      hash: a80de421a93a21d64bd2b4837345946c1a1a3a15
+      subject: Prepare for open sourcing
+  date: '2018-09-28T07:19:09Z'
   version: 2.0.0
 - commits:
-  - author: Heds Simons
-    body: |-
-      This change allows output to be captured by the Supervisor
-      on resinOS devices when run as a service.
-      Includes missing ResinCI config.
-    footers:
-      change-type: patch
-      connects-to: '#16'
-      signed-off-by: Heds Simons <heds@resin.io>
-    hash: 0b5c8f55af4073d21984f19c859a72b291f246e7
-    subject: 'logging: Enable logging output to also go to console'
-  date: "2018-09-25T10:53:53Z"
+    - author: Heds Simons
+      body: |-
+        This change allows output to be captured by the Supervisor
+        on resinOS devices when run as a service.
+        Includes missing ResinCI config.
+      footers:
+        change-type: patch
+        connects-to: '#16'
+        signed-off-by: Heds Simons <heds@resin.io>
+      hash: 0b5c8f55af4073d21984f19c859a72b291f246e7
+      subject: 'logging: Enable logging output to also go to console'
+  date: '2018-09-25T10:53:53Z'
   version: 1.1.1
 - commits:
-  - author: Pagan Gazzard
-    body: ""
-    footers:
-      change-type: minor
-      signed-off-by: Pagan Gazzard <page@resin.io>
-    hash: b5c1cc76e96d74f1579dbfeb3bec84313f0b9c42
-    subject: Update to resin-base 4.3.0
-  date: "2018-09-11T14:07:54Z"
+    - author: Pagan Gazzard
+      body: ''
+      footers:
+        change-type: minor
+        signed-off-by: Pagan Gazzard <page@resin.io>
+      hash: b5c1cc76e96d74f1579dbfeb3bec84313f0b9c42
+      subject: Update to resin-base 4.3.0
+  date: '2018-09-11T14:07:54Z'
   version: 1.1.0
 - commits:
-  - author: Heds Simons
-    body: ""
-    footers:
-      change-type: patch
-      connects-to: '#13'
-      signed-off-by: Heds Simons <heds@whaleway.net>
-    hash: 579abb95342232ab2010b9475e3d47944b9d8988
-    subject: Move to latest `resin-base` to include MDNS support.
-  date: "2018-07-06T13:26:05Z"
+    - author: Heds Simons
+      body: ''
+      footers:
+        change-type: patch
+        connects-to: '#13'
+        signed-off-by: Heds Simons <heds@whaleway.net>
+      hash: 579abb95342232ab2010b9475e3d47944b9d8988
+      subject: Move to latest `resin-base` to include MDNS support.
+  date: '2018-07-06T13:26:05Z'
   version: 1.0.4
 - commits:
-  - author: Heds Simons
-    body: |-
-      This also moves the Go version to 1.10.3 to support the latest version
-      of Minio.
-    footers:
-      change-type: patch
-      connects-to: '#11'
-      signed-off-by: Heds Simons <heds@whaleway.net>
-    hash: 1d3a6fa117dad36edbded4e2935287bfa2f11d2e
-    subject: Move to CircleCI 2 config file and ensure built images have version tags.
-  date: "2018-06-15T11:01:26Z"
+    - author: Heds Simons
+      body: |-
+        This also moves the Go version to 1.10.3 to support the latest version
+        of Minio.
+      footers:
+        change-type: patch
+        connects-to: '#11'
+        signed-off-by: Heds Simons <heds@whaleway.net>
+      hash: 1d3a6fa117dad36edbded4e2935287bfa2f11d2e
+      subject: >-
+        Move to CircleCI 2 config file and ensure built images have version
+        tags.
+  date: '2018-06-15T11:01:26Z'
   version: 1.0.3
 - commits:
-  - author: Heds Simons
-    body: |-
-      This is required as the previous version fails to correctly send
-      all required data to the Image Maker in offline mode.
-    footers:
-      change-type: patch
-      connects-to: '#7'
-    hash: 882db8b430ecb2c93e1ea24b462fda5aa4d9db0e
-    subject: Update to Go 1.8.3 and move to latest Minio installation.
-  date: "2017-10-02T10:18:24Z"
+    - author: Heds Simons
+      body: |-
+        This is required as the previous version fails to correctly send
+        all required data to the Image Maker in offline mode.
+      footers:
+        change-type: patch
+        connects-to: '#7'
+      hash: 882db8b430ecb2c93e1ea24b462fda5aa4d9db0e
+      subject: Update to Go 1.8.3 and move to latest Minio installation.
+  date: '2017-10-02T10:18:24Z'
   version: 1.0.2
 - commits:
-  - author: Heds Simons
-    body: Removes the Jenkins config, at the same time.
-    footers:
-      change-type: patch
-    hash: c8f6e6321df21b6e80a1b7de3ea16683ac510d66
-    subject: Add `circle.yml` to move from Jenkins to CircleCI building.
-  date: "2017-08-30T08:58:42Z"
+    - author: Heds Simons
+      body: 'Removes the Jenkins config, at the same time.'
+      footers:
+        change-type: patch
+      hash: c8f6e6321df21b6e80a1b7de3ea16683ac510d66
+      subject: Add `circle.yml` to move from Jenkins to CircleCI building.
+  date: '2017-08-30T08:58:42Z'
   version: 1.0.1
 - commits:
-  - author: Heds Simons
-    body: ""
-    hash: f5b5176936efb10a381232c9a67befdce67ccbc1
-    subject: Add VersionBot control.
-  - author: Heds Simons
-    body: 'Connects to #1.'
-    hash: baa0feff2487a2457b63c8beb150c206a8998224
-    subject: Initial commit for using Minio as the cloud service for S3 support.
-  - author: Heds Simons
-    body: 'Connects to #1.'
-    hash: 49cdb6097a79161f3b1ea0ce90b3dfc70e5afba8
-    subject: Adds automation for Jenkins, should build the `resin/resin-s3-minio`
-      container.
-  - author: Heds Simons
-    body: 'Connects to #1.'
-    hash: a4e471862997189de320b20c14bbd851e60082b6
-    subject: Specifically names the registry contains that will be pushed as `resin-s3-minio`.
-  - author: Heds Simons
-    body: ""
-    hash: 9c1e53f1b8dce2a6ddd48f0f62d195284cd2b5f0
-    subject: Reverts specific `s3-minio` name back to generic Jenkins JOB_NAME.
-  date: "2017-08-24T10:41:21Z"
+    - author: Heds Simons
+      body: ''
+      hash: f5b5176936efb10a381232c9a67befdce67ccbc1
+      subject: Add VersionBot control.
+    - author: Heds Simons
+      body: 'Connects to #1.'
+      hash: baa0feff2487a2457b63c8beb150c206a8998224
+      subject: Initial commit for using Minio as the cloud service for S3 support.
+    - author: Heds Simons
+      body: 'Connects to #1.'
+      hash: 49cdb6097a79161f3b1ea0ce90b3dfc70e5afba8
+      subject: >-
+        Adds automation for Jenkins, should build the `resin/resin-s3-minio`
+        container.
+    - author: Heds Simons
+      body: 'Connects to #1.'
+      hash: a4e471862997189de320b20c14bbd851e60082b6
+      subject: >-
+        Specifically names the registry contains that will be pushed as
+        `resin-s3-minio`.
+    - author: Heds Simons
+      body: ''
+      hash: 9c1e53f1b8dce2a6ddd48f0f62d195284cd2b5f0
+      subject: Reverts specific `s3-minio` name back to generic Jenkins JOB_NAME.
+  date: '2017-08-24T10:41:21Z'
   version: 1.0.0
