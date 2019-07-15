@@ -2,6 +2,7 @@
 Description=open-balena-s3
 Requires=confd.service
 After=confd.service
+StartLimitIntervalSec=0
 
 [Service]
 StandardOutput=journal+console
@@ -10,7 +11,6 @@ ExecStartPre=/bin/mkdir -p /export/.minio.sys/config
 ExecStartPre=/bin/cp /usr/src/app/minio-config.json /export/.minio.sys/config/config.json
 ExecStart=/go/bin/minio server --address ":80" /export
 Restart=always
-StartLimitIntervalSec=0
 
 [Install]
 WantedBy=basic.target
