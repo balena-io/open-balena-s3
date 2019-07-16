@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'systemd: move StartLimitIntervalSec to proper section'
+      hash: 86de461821c1b2f41a2a0aff3973b60679806f0c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 2.8.1
+  date: 2019-07-15T22:27:55.433Z
+- commits:
     - subject: Update open-balena-base to 8.0.0
       hash: 564a91386ae8a7afa8f916eb8b3680e333a5588b
       body: |
