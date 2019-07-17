@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update open-balena-base to 8.0.1
+      hash: b35a1e700beeb0658f5f1a773a135b43e5b42cfa
+      body: |
+        Update open-balena-base from 8.0.0 to 8.0.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: 'mdns: Ensure multipart subdomains are allowed'
+              hash: bc5903d77867c3c969f1e7193cbef69dab12eeef
+              body: |
+                Debian Buster now uses Avahi 0.7 instead of
+                0.6.32. This means that there is now a stricter
+                policy defining MDNS domains. This commit allows
+                us to use multipart subdomains.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Heds Simons <heds@balena.io>
+                signed-off-by: Heds Simons <heds@balena.io>
+              author: Heds Simons
+          version: open-balena-base-8.0.1
+          date: 2019-07-17T15:08:57.053Z
+  version: 2.8.2
+  date: 2019-07-17T15:35:28.432Z
+- commits:
     - subject: 'systemd: move StartLimitIntervalSec to proper section'
       hash: 86de461821c1b2f41a2a0aff3973b60679806f0c
       body: ''
