@@ -18,9 +18,17 @@ RUN curl -SLO https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.
     GO111MODULE=on go get github.com/minio/minio && \
     rm -rf /go/pkg
 
+RUN wget -O /sbin/mc https://dl.min.io/client/mc/release/linux-amd64/mc && \
+    chmod +x /sbin/mc && \
+    mkdir -p /root/.mc
+
 # systemd and minio config
 COPY config /usr/src/app/config
 COPY config/services/ /etc/systemd/system/
+
+# create-buckets
+COPY scripts/create-buckets.sh /sbin/create-buckets.sh
+RUN systemctl enable create-buckets.service
 
 # Enable Minio service
 RUN systemctl enable open-balena-s3.service
