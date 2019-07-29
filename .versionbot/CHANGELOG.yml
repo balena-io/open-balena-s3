@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'feature: Create named buckets on start'
+      hash: 86888fb68e443ca2440442ed69d2857e502a596b
+      body: |
+        - pass a semi-colon seperated list of buckets to create after starting
+        - should be in the environment variable BUCKETS
+        - if it's empty/unset then do nothing
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Rich Bayliss <rich@balena.io>
+        signed-off-by: Rich Bayliss <rich@balena.io>
+      author: Rich Bayliss
+  version: 2.8.3
+  date: 2019-07-29T13:46:52.011Z
+- commits:
     - subject: Update open-balena-base to 8.0.1
       hash: b35a1e700beeb0658f5f1a773a135b43e5b42cfa
       body: |
