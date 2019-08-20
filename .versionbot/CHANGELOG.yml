@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update open-balena-base to 8.0.3
+      hash: 936adeea89306eeb8f99d84a57a43331119b0885
+      body: |
+        Update open-balena-base from 8.0.2 to 8.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: "\U0001F512: Update Node to 10.16.3 and NPM to 6.10.3"
+              hash: 8714ca3fee1ff44187e0a0c4b6c648d0c2fe550c
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Connects-to: '#91'
+                connects-to: '#91'
+                Signed-off-by: Andreas Fitzek <andreas@balena.io>
+                signed-off-by: Andreas Fitzek <andreas@balena.io>
+              author: Andreas Fitzek
+          version: open-balena-base-8.0.3
+          date: 2019-08-16T12:10:08.587Z
+  version: 2.8.5
+  date: 2019-08-20T11:42:31.851Z
+- commits:
     - subject: Update open-balena-base to 8.0.2
       hash: 7987b31246181a24c8cd50abf325c7593f3807c4
       body: |
