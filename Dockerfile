@@ -1,11 +1,11 @@
-FROM balena/open-balena-base:v8.0.3
+FROM balena/open-balena-base:v9.0.0
 
 EXPOSE 80
 
 VOLUME /export
 
-ENV GO_VERSION 1.12.5
-ENV GO_SHA256 aea86e3c73495f205929cfebba0d63f1382c8ac59be081b6351681415f4063cf
+ENV GO_VERSION 1.13.3
+ENV GO_SHA256 0804bf02020dceaa8a7d7275ee79f7a142f1996bfd0c39216ccb405f93f994c0
 ENV PATH ${PATH}:/usr/local/go/bin
 ENV GOPATH /go
 

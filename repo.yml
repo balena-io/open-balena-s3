@@ -1,4 +1,4 @@
-type: 'generic'
+type: 'docker'
 reviewers: 1
 upstream:
   - repo: 'open-balena-base'
