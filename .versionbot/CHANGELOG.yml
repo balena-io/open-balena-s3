@@ -1,4 +1,15 @@
 - commits:
+    - subject: Update to golang 1.16 as minio requires it
+      hash: a2e027f26a9348977f7745e04fad8380d75255b0
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Pagan Gazzard
+      nested: []
+  version: 2.10.0
+  date: 2021-03-08T18:22:00.227Z
+- commits:
     - subject: Update open-balena-base to 9.4.3
       hash: dcab3e308033b051c60432820167c4c97c13cb16
       body: |
