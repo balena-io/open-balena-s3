@@ -1,4 +1,115 @@
 - commits:
+    - subject: Update open-balena-base to 11.1.0
+      hash: 87f03961d81900504cf0187540bcdd8ac3d41ece
+      body: |
+        Update open-balena-base from 10.0.2 to 11.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: Update nodejs to 14.16.0
+              hash: ed8a58f5db73244f75d2e10b6b8df9d883247558
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.1.0
+          date: 2021-02-24T14:22:42.656Z
+        - commits:
+            - subject: Update nodejs to 14.15.5 and npm to 6.14.11
+              hash: 2e812ae8993ad13b1ac0d7a760e4c45ab8b8bd9d
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.0.5
+          date: 2021-02-15T15:06:34.842Z
+        - commits:
+            - subject: Update nodejs to 14.15.4 and npm to 6.14.10
+              hash: 0a52eb67b211fdc31d73e279e6e871b2e803f485
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.0.4
+          date: 2021-01-08T15:21:19.521Z
+        - commits:
+            - subject: Update nodejs to 14.15.3 and npm to 6.14.9
+              hash: 6d9ed96133ca1b4783eafc8b8698f10cd88aaad2
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.0.3
+          date: 2020-12-18T12:11:00.995Z
+        - commits:
+            - subject: Update nodejs to 14.15.1
+              hash: cf533d8fa978bddd6650f129a010b285be485070
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.0.2
+          date: 2020-11-18T12:45:09.418Z
+        - commits:
+            - subject: Publish tagged versions of the no-systemd image
+              hash: 30cd15a4e5fa065635b76f18b842a0dd43320778
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.0.1
+          date: 2020-10-29T14:19:49.787Z
+        - commits:
+            - subject: Update to nodejs 14
+              hash: d2c0a6a0549b85ed9daa1d8f4085cd5dd96e6f86
+              body: ''
+              footer:
+                Change-type: major
+                change-type: major
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.0.0
+          date: 2020-10-27T16:09:19.043Z
+        - commits:
+            - subject: Fix no-systemd nodejs version
+              hash: 3b3db51c6012342fb70f868b8fa747078c2f2294
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-10.1.1
+          date: 2020-10-09T16:21:15.080Z
+        - commits:
+            - subject: Update nodejs to 12.19.0
+              hash: 8431b0e087367ac38454017f86bd1d6f8e8eb814
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-10.1.0
+          date: 2020-10-07T14:47:49.406Z
+  version: 2.10.2
+  date: 2021-03-08T19:00:49.874Z
+- commits:
     - subject: Update open-balena-base to v10.0.2
       hash: 920c23b3fb64fbe6e57160576b076f9470fbadcc
       body: |
