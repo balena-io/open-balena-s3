@@ -1,7 +1,0 @@
-[template]
-src = "config.json.tmpl"
-dest = "/usr/src/app/minio-config.json"
-keys = [
-  "S3_MINIO_ACCESS_KEY",
-  "S3_MINIO_SECRET_KEY"
-]
