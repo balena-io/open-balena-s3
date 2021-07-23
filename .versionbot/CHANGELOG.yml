@@ -1,4 +1,70 @@
 - commits:
+    - subject: Fix console port
+      hash: 553a59d2324d49c94035361b588f711db9e9c13a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+    - subject: Update open-balena-base to 11.3.2
+      hash: 0db7e5d93dcf526d4f5d0768e8dd7c1e2173dda2
+      body: |
+        Update open-balena-base from 11.1.2 to 11.3.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: Update nodejs to 14.17.2
+              hash: cc11cc5654ee0bf85af40882a567c9b7fb644f48
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.3.2
+          date: 2021-07-02T17:34:25.572Z
+        - commits:
+            - subject: Delete .github directory
+              hash: d4d32ee5b021b1dd8864e2a2285530f1f4a85829
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: dfunckt
+              nested: []
+          version: open-balena-base-11.3.1
+          date: 2021-06-30T15:35:52.543Z
+        - commits:
+            - subject: Update nodejs to 14.17.1
+              hash: e0471dbbe042d4416ad3bba67ea50dcc4565de9f
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+              nested: []
+          version: open-balena-base-11.3.0
+          date: 2021-06-30T03:47:56.917Z
+        - commits:
+            - subject: Update nodejs to 14.17.0 and npm to 6.14.13
+              hash: d4a35f84c95db475b972aab4ed7781ce47515f39
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-11.2.0
+          date: 2021-05-14T15:14:39.729Z
+  version: 2.10.5
+  date: 2021-07-23T22:53:24.879Z
+- commits:
     - subject: Delete CODEOWNERS
       hash: 7fbbe78d091f4eb83038b306e95f43f9a4ea6057
       body: ''
