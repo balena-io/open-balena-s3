@@ -1,4 +1,4 @@
-FROM balena/open-balena-base:v12.0.3
+FROM balena/open-balena-base:v12.1.0
 
 EXPOSE 80
 
@@ -29,6 +29,8 @@ COPY config/services/ /etc/systemd/system/
 # create-buckets
 COPY scripts/create-buckets.sh /sbin/create-buckets.sh
 RUN systemctl enable create-buckets.service
+
+COPY docker-hc /usr/src/app/
 
 # Enable Minio service
 RUN systemctl enable open-balena-s3.service
