@@ -1,4 +1,4 @@
-FROM balena/open-balena-base:v13.0.4
+FROM balena/open-balena-base:no-systemd-13.0.4
 
 EXPOSE 80
 
@@ -24,13 +24,14 @@ RUN wget -O /sbin/mc https://dl.min.io/client/mc/release/linux-amd64/mc && \
 
 # systemd and minio config
 COPY config /usr/src/app/config
-COPY config/services/ /etc/systemd/system/
 
 # create-buckets
 COPY scripts/create-buckets.sh /sbin/create-buckets.sh
-RUN systemctl enable create-buckets.service
 
 COPY docker-hc /usr/src/app/
+COPY entry.sh /usr/src/app/
+RUN chmod +x /usr/src/app/entry.sh
 
-# Enable Minio service
-RUN systemctl enable open-balena-s3.service
+# Start Minio
+CMD [ "/usr/src/app/entry.sh" ]
+ENTRYPOINT [ "/usr/src/app/entry.sh" ]
