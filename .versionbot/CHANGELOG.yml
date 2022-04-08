@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update open-balena-base to 13.2.3 Update open-balena-base from 13.2.1
+        to 13.2.3
+      hash: a82dab3b04189cfdd020d514577ae5d70e746395
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 2.13.5
+  title: "'Update open-balena-base'"
+  date: 2022-04-08T19:47:01.079Z
+- commits:
     - subject: Update open-balena-base to 13.2.1
       hash: 3c103a8c1e64f35fe13699451d15b9303781c95f
       body: |
