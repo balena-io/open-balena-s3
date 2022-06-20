@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin minio release
+      hash: 9e7a99d65f8a91ddefd2ca51da1c6c2f58a92739
+      body: |
+        * upgrade credentials config version
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 2.13.9
+  title: "'Pin minio release'"
+  date: 2022-06-20T23:41:01.495Z
+- commits:
     - subject: Update balena/open-balena-base from v13.3.1 to v13.3.2
       hash: d83fc1b9d5db8b0745e32d1b6f489a82dcab3e1e
       body: ""
