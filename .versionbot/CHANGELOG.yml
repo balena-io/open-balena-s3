@@ -1,4 +1,84 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v13.5.2
+      hash: 3cb142cd273c0ae790ac45e034be2081867b654e
+      body: |
+        Update balena/open-balena-base to 13.5.2
+
+        Update balena/open-balena-base from 13.5.0 to 13.5.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.14.1
+  title: "'Update balena/open-balena-base Docker tag to v13.5.2'"
+  date: 2022-09-26T16:17:24.378Z
+- commits:
+    - subject: Update balena/open-balena-base Docker tag to v13.5.0
+      hash: b1aeb42939c252e9898b373ab69689ad3b9724ba
+      body: |
+        Update balena/open-balena-base to 13.5.0
+
+        Update balena/open-balena-base from 13.4.0 to 13.5.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 2.14.0
+  title: "'Update balena/open-balena-base Docker tag to v13.5.0'"
+  date: 2022-08-18T20:48:18.338Z
+- commits:
+    - subject: Update open-balena-base to 13.4.0
+      hash: ea5e1215ec13bb174b57b597c02107d162c9b50d
+      body: |
+        Update open-balena-base from 13.3.2 to 13.4.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: Update nodejs to 16.16.0 and npm to 8.13.2
+              hash: 1e2f05bb44e7d25fbb52f8a738e2707d2915d340
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-13.4.0
+          title: "'Update nodejs to 16.16.0 and npm to 8.13.2'"
+          date: 2022-07-09T08:32:33.121Z
+  version: 2.13.10
+  title: "'Update open-balena-base to 13.4.0'"
+  date: 2022-07-12T14:01:56.191Z
+- commits:
+    - subject: Pin minio release
+      hash: 9e7a99d65f8a91ddefd2ca51da1c6c2f58a92739
+      body: |
+        * upgrade credentials config version
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 2.13.9
+  title: "'Pin minio release'"
+  date: 2022-06-20T23:41:01.495Z
+- commits:
+    - subject: Update balena/open-balena-base from v13.3.1 to v13.3.2
+      hash: d83fc1b9d5db8b0745e32d1b6f489a82dcab3e1e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.13.8
+  title: "'Update balena/open-balena-base from v13.3.1 to v13.3.2'"
+  date: 2022-06-13T16:22:22.587Z
+- commits:
     - subject: Update open-balena-base to 13.3.1
       hash: be5d62737c9b28f85492ee377a6079a2dab4a9bd
       body: |
