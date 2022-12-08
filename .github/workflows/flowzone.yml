@@ -21,3 +21,6 @@ jobs:
     secrets: inherit
     with:
       docker_images: balena/open-balena-s3
+      repo_config: true
+      repo_description: "Amazon S3-compatible storage backend for openBalena"
+      repo_homepage: "balena.io/open"
