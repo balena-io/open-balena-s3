@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v14.5.0
+      hash: 5fc15dcb1960baa910160b4dc8f276f43b5be8dc
+      body: |
+        Update balena/open-balena-base to 14.5.0
+
+        Update balena/open-balena-base from 14.4.2 to 14.5.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 2.20.0
+  title: ""
+  date: 2023-02-17T13:11:29.331Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v14.4.2
       hash: c3520bb626cd5e339cb027fd80f78d5ba931d9e3
       body: |
