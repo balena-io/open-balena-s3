@@ -1,4 +1,16 @@
 - commits:
+    - subject: Build multiarch images for amd64 and arm64
+      hash: fdee8b6427f3376f4991aaa99d7dc466c17e2a06
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.22.2
+  title: ""
+  date: 2023-03-22T15:52:58.165Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v14.7.1
       hash: 22dcab73512a42e4ab0fdbd03eba46f4f2cd4ddb
       body: |
