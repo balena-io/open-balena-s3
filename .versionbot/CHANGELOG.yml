@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update to go 1.19 to align with minio/minio
+      hash: 24a351e4e9e931d84a299b0b8e5835afd65f8490
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.27.11
+  title: ""
+  date: 2023-09-01T19:32:14.181Z
+- commits:
     - subject: Update dependency minio/minio to RELEASE.2022-05-26T05-48-41Z
       hash: 13981b194f4a8d28305d572220e4a6111d3e5442
       body: >
