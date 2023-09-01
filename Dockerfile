@@ -10,19 +10,23 @@ ENV GO_SHA256_amd64 013a489ebb3e24ef3d915abe5b94c3286c070dfe0818d5bca8108f1d6e84
 ENV GO_SHA256_arm64 3770f7eb22d05e25fbee8fb53c2a4e897da043eb83c69b9a14f8d98562cd8098
 ENV GO_VERSION 1.16
 ENV GOPATH /go
-# https://github.com/minio/minio/tree/RELEASE.2022-05-04T07-45-27Z
-ENV MINIO_RELEASE=RELEASE.2022-05-04T07-45-27Z
+
+# https://github.com/minio/minio/tags
+# renovate: datasource=github-tags depName=minio/minio versioning=regex:^RELEASE\.(?<major>\d{4})-(?<minor>\d{2})-(?<patch>\d{2})
+ENV MINIO_VERSION=RELEASE.2022-05-04T07-45-27Z
 ENV PATH ${PATH}:/usr/local/go/bin
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Get Go and Minio
 RUN curl -SLO https://storage.googleapis.com/golang/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz \
 	&& echo "$(eval echo \$GO_SHA256_${TARGETARCH}) go${GO_VERSION}.linux-${TARGETARCH}.tar.gz" | sha256sum -c \
 	&& tar xz -C /usr/local -f go${GO_VERSION}.linux-${TARGETARCH}.tar.gz \
 	&& rm go${GO_VERSION}.linux-${TARGETARCH}.tar.gz \
-	&& GO111MODULE=on go get github.com/minio/minio@${MINIO_RELEASE} \
+	&& GO111MODULE=on go get github.com/minio/minio@${MINIO_VERSION} \
 	&& rm -rf /go/pkg
 
-RUN wget -O /sbin/mc https://dl.min.io/client/mc/release/linux-${TARGETARCH}/mc \
+RUN curl -fsSL -o /sbin/mc https://dl.min.io/client/mc/release/linux-${TARGETARCH}/mc \
 	&& chmod +x /sbin/mc \
 	&& mkdir -p /root/.mc
 
