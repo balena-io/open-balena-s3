@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependency minio/minio to v2023
+      hash: 72caddeebaa32e793c166336c4382c10dadec317
+      body: >
+        Update minio/minio from RELEASE.2022-12-12T19-27-27Z to
+        RELEASE.2023-08-31T15-31-16Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.27.13
+  title: ""
+  date: 2023-09-01T22:40:17.820Z
+- commits:
     - subject: Update dependency minio/minio to RELEASE.2022-12-12T19-27-27Z
       hash: 6dad70098bfe112a79bd81cbf55e256c150647bb
       body: >
