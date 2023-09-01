@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependency minio/minio to RELEASE.2022-12-12T19-27-27Z
+      hash: 6dad70098bfe112a79bd81cbf55e256c150647bb
+      body: >
+        Update minio/minio from RELEASE.2022-05-26T05-48-41Z to
+        RELEASE.2022-12-12T19-27-27Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.27.12
+  title: ""
+  date: 2023-09-01T20:38:19.336Z
+- commits:
     - subject: Update to go 1.19 to align with minio/minio
       hash: 24a351e4e9e931d84a299b0b8e5835afd65f8490
       body: ""
