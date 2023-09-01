@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependency minio/minio to RELEASE.2022-05-26T05-48-41Z
+      hash: 13981b194f4a8d28305d572220e4a6111d3e5442
+      body: >
+        Update minio/minio from RELEASE.2022-05-04T07-45-27Z to
+        RELEASE.2022-05-26T05-48-41Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.27.10
+  title: ""
+  date: 2023-09-01T18:41:31.559Z
+- commits:
     - subject: Add renovate annotations for minio github-tags
       hash: 754dd0b33bc629a23ae563504f5c054532dadeaa
       body: ""
