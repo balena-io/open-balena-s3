@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add renovate annotations for minio github-tags
+      hash: 754dd0b33bc629a23ae563504f5c054532dadeaa
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.27.9
+  title: ""
+  date: 2023-09-01T18:06:49.604Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v15.1.0
       hash: 5d18adb66743348648eded9981ea0ce793711ede
       body: |
