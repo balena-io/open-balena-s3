@@ -12,7 +12,8 @@ ENV GOPATH /go
 
 # https://github.com/minio/minio/tags
 # renovate: datasource=github-tags depName=minio/minio versioning=regex:^RELEASE\.(?<major>\d{4})-(?<minor>\d{2})-(?<patch>\d{2})
-ENV MINIO_VERSION=RELEASE.2023-08-31T15-31-16Z
+# https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
+ENV MINIO_VERSION=RELEASE.2022-10-24T18-35-07Z
 ENV PATH ${PATH}:/usr/local/go/bin
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
