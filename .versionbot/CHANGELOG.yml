@@ -1,4 +1,20 @@
 - commits:
+    - subject: Revert minio release prior to deprecation of standalone filesystem
+      hash: f28405b0fa540314ae8efa66a6944dba26d905d6
+      body: >
+        See:
+        https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.27.14
+  title: ""
+  date: 2023-09-04T10:21:49.652Z
+- commits:
     - subject: Update dependency minio/minio to v2023
       hash: 72caddeebaa32e793c166336c4382c10dadec317
       body: >
