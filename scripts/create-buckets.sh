@@ -13,12 +13,12 @@ IFS=';' read -ra NEW_BUCKETS <<< "$BUCKETS"
 # - list the buckets in JSON
 # - extract the key value
 # - remove the last char, a slash in this case
-EXISTING_BUCKETS=($(mc ls --json localhost/ | jq .key -r | rev | cut -c 2- | rev))
+EXISTING_BUCKETS=($(mc ls --json localhost:// | jq .key -r | rev | cut -c 2- | rev))
 
 for bucket in "${NEW_BUCKETS[@]}"; do
     echo "Create bucket: $bucket..."
     if [[ ! " ${EXISTING_BUCKETS[@]} " =~ " ${bucket} " ]]; then
-        /sbin/mc mb "localhost/${bucket}"
+        /sbin/mc mb "localhost://${bucket}"
     else
         echo "Bucket already exists: $bucket"
     fi
