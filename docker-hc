@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 systemctl is-active open-balena-s3.service \
-  && mc ls localhost
+  && mc ls localhost://
