@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v15.1.1
+      hash: db48ebe574530ec02cecdedd4957809b22f65dc1
+      body: |
+        Update balena/open-balena-base from 15.1.0 to 15.1.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.27.15
+  title: ""
+  date: 2023-09-07T19:45:39.741Z
+- commits:
     - subject: Revert minio release prior to deprecation of standalone filesystem
       hash: f28405b0fa540314ae8efa66a6944dba26d905d6
       body: >
