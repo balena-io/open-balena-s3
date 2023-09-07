@@ -1,32 +1,28 @@
-FROM balena/open-balena-base:v15.1.0
+FROM balena/open-balena-base:v15.1.1
 
 EXPOSE 80
 
 VOLUME /export
 
 ARG TARGETARCH
-ENV GO_SHA256_amd64 464b6b66591f6cf055bc5df90a9750bf5fbc9d038722bb84a9d56a2bea974be6
-ENV GO_SHA256_arm64 efa97fac9574fc6ef6c9ff3e3758fb85f1439b046573bf434cccb5e012bd00c8
-ENV GO_VERSION 1.19
+
+ENV GO_SHA256_amd64 013a489ebb3e24ef3d915abe5b94c3286c070dfe0818d5bca8108f1d6e8440d2
+ENV GO_SHA256_arm64 3770f7eb22d05e25fbee8fb53c2a4e897da043eb83c69b9a14f8d98562cd8098
+ENV GO_VERSION 1.16
 ENV GOPATH /go
-
-# https://github.com/minio/minio/tags
-# renovate: datasource=github-tags depName=minio/minio versioning=regex:^RELEASE\.(?<major>\d{4})-(?<minor>\d{2})-(?<patch>\d{2})
-# https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
-ENV MINIO_VERSION=RELEASE.2022-10-24T18-35-07Z
+# https://github.com/minio/minio/tree/RELEASE.2022-05-04T07-45-27Z
+ENV MINIO_RELEASE=RELEASE.2022-05-04T07-45-27Z
 ENV PATH ${PATH}:/usr/local/go/bin
-
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Get Go and Minio
 RUN curl -SLO https://storage.googleapis.com/golang/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz \
 	&& echo "$(eval echo \$GO_SHA256_${TARGETARCH}) go${GO_VERSION}.linux-${TARGETARCH}.tar.gz" | sha256sum -c \
 	&& tar xz -C /usr/local -f go${GO_VERSION}.linux-${TARGETARCH}.tar.gz \
 	&& rm go${GO_VERSION}.linux-${TARGETARCH}.tar.gz \
-	&& GO111MODULE=on go install github.com/minio/minio@${MINIO_VERSION} \
+	&& GO111MODULE=on go get github.com/minio/minio@${MINIO_RELEASE} \
 	&& rm -rf /go/pkg
 
-RUN curl -fsSL -o /sbin/mc https://dl.min.io/client/mc/release/linux-${TARGETARCH}/mc \
+RUN wget -O /sbin/mc https://dl.min.io/client/mc/release/linux-${TARGETARCH}/mc \
 	&& chmod +x /sbin/mc \
 	&& mkdir -p /root/.mc
 
