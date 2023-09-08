@@ -1,4 +1,15 @@
 - commits:
+    - subject: structural changes to support newer minio release(s)
+      hash: 9538ff1fc9154c16509d330c093ef7735acab4cc
+      body: ""
+      footer:
+        change-type: minor
+      author: ab77
+      nested: []
+  version: 2.28.0
+  title: ""
+  date: 2023-09-08T01:15:09.928Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v15.1.1
       hash: db48ebe574530ec02cecdedd4957809b22f65dc1
       body: |
