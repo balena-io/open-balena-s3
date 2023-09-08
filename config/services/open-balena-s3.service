@@ -7,8 +7,7 @@ StartLimitIntervalSec=0
 [Service]
 StandardOutput=journal+console
 StandardError=journal+console
-ExecStartPre=/bin/mkdir -p /export/.minio.sys/config
-ExecStartPre=/bin/cp /usr/src/app/minio-config.json /export/.minio.sys/config/config.json
+EnvironmentFile=/usr/src/app/config/env
 ExecStart=/go/bin/minio server --address ":80" --console-address ":43697" /export
 Restart=always
 
