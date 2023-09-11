@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update open-balena-base to 16.0.0
+      hash: 0026abb56be486011704f341b0ca25001d782916
+      body: |
+        Update open-balena-base from 15.1.1 to 16.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested:
+        - commits:
+            - subject: Update nodejs to 20.6.1 and npm to 10.1.0
+              hash: 7de3033a0fdbfe7942718532a105321d532541d6
+              body: ""
+              footer:
+                Change-type: major
+                change-type: major
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-16.0.0
+          title: ""
+          date: 2023-09-11T10:26:55.870Z
+  version: 2.28.1
+  title: ""
+  date: 2023-09-11T11:29:15.999Z
+- commits:
     - subject: structural changes to support newer minio release(s)
       hash: 9538ff1fc9154c16509d330c093ef7735acab4cc
       body: ""
