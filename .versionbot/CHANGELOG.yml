@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v16.0.16
+      hash: e3325cf97c73bd6480b895e693ba16a5eff06449
+      body: |
+        Update balena/open-balena-base from 16.0.15 to 16.0.16
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: remove self-hosted Sentry config
+              hash: 3f390363034c3d9ceeacaa78c93ceee927a9aaff
+              body: |
+                * components can be manually configuired to point to SaaS Sentry
+              footer:
+                change-type: patch
+              author: ab77
+              nested: []
+          version: open-balena-base-16.0.16
+          title: ""
+          date: 2023-12-05T00:24:26.689Z
+  version: 2.28.18
+  title: ""
+  date: 2023-12-05T01:42:54.994Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v16.0.15
       hash: ea870f39480236e09ea75373a4e7d8b76f5641c9
       body: |
