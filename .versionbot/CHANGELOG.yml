@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove repo config from flowzone.yml
+      hash: 4567289af95f01312561917f1feb83a154360c1a
+      body: |
+        This functionality is being deprecated in Flowzone.
+
+        See: https://github.com/product-os/flowzone/pull/833
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.28.21
+  title: ""
+  date: 2023-12-19T21:59:03.825Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v16.0.18
       hash: 25cdc691024b48282a10bdb78be87537d1d4e305
       body: |
