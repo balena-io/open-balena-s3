@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v17.0.9
+      hash: 9ed9c0c78c1ffb163fb941a29c7c850c52623533
+      body: |
+        Update balena/open-balena-base from 17.0.8 to 17.0.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency node to v21.7.0
+              hash: 090c5b72737c4849076108d38b84b77b482822f1
+              body: |
+                Update node from 21.6.2 to 21.7.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: open-balena-base-17.0.9
+          title: ""
+          date: 2024-03-06T18:58:19.803Z
+  version: 2.28.31
+  title: ""
+  date: 2024-03-06T20:13:13.068Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v17.0.8
       hash: 887ab90d7c477fbbc54fad059728ed93019ba632
       body: |
@@ -1852,18 +1878,24 @@
                 + allows balenaMachine(s)/BoB(s) to automatically configure
                 itself (without bob-cli)
 
-                + auto-configuration requires balena-ca and cert-manager to do the heavy lifting prior
+                + auto-configuration requires balena-ca and cert-manager to do
+                the heavy lifting prior
 
-                + corresponding [balena-on-balena PR](https://github.com/balena-io/balena-on-balena/pull/261)
+                + corresponding [balena-on-balena
+                PR](https://github.com/balena-io/balena-on-balena/pull/261)
 
 
-                * refactor confd.service to include both root-ca and host-envvars handling
+                * refactor confd.service to include both root-ca and
+                host-envvars handling
 
-                * add systemd path watcher to restart confd if keys/certs change during runtime
+                * add systemd path watcher to restart confd if keys/certs change
+                during runtime
 
-                * store stack configuration available to all services in a persistent/shared volume (/balena)
+                * store stack configuration available to all services in a
+                persistent/shared volume (/balena)
 
-                * change resolver order to dns => mdns (ipv4) => mdns (ipv6) => return
+                * change resolver order to dns => mdns (ipv4) => mdns (ipv6) =>
+                return
 
                 * configure API key and JOSE/JWT key id
 
@@ -2120,7 +2152,8 @@
               body: >
                 * TOKEN_AUTH_REALM => REGISTRY2_TOKEN_AUTH_REALM
 
-                * REGISTRY2_TOKEN_AUTH_REALM is the new name for BALENA_TOKEN_AUTH_REALM
+                * REGISTRY2_TOKEN_AUTH_REALM is the new name for
+                BALENA_TOKEN_AUTH_REALM
               footer:
                 Change-type: patch
                 change-type: patch
