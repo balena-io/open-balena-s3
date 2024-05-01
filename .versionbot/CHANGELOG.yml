@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v17.0.17
+      hash: dcfdbd086ca6a1681e5e2b86e4e8759b17d94df8
+      body: |
+        Update balena/open-balena-base from 17.0.16 to 17.0.17
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Install confd from pre-packaged OCI
+              hash: cd777808200b730bfc2cd0cd1af7909fce48c196
+              body: |
+                This avoids building the same, unchanging golang
+                binary on every CI run.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: open-balena-base-17.0.17
+          title: ""
+          date: 2024-05-01T20:08:59.927Z
+  version: 2.28.39
+  title: ""
+  date: 2024-05-01T21:14:48.673Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v17.0.16
       hash: f2f38913a27ed931688c41c691202e8fbdbf7114
       body: |
