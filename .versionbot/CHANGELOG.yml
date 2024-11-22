@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v18.0.19
+      hash: aa0faa355a64a4f525b1a56275d09d49df9d1a7e
+      body: |
+        Update balena/open-balena-base from 18.0.17 to 18.0.19
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency npm to v10.9.1
+              hash: ecc560e2b4745929bf03f6e2fee199dd68a7d0fd
+              body: |
+                Update npm from 10.9.0 to 10.9.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: open-balena-base-18.0.19
+          title: ""
+          date: 2024-11-21T22:54:55.391Z
+        - commits:
+            - subject: Update ghcr.io/balena-io-modules/confd-releases Docker tag to v0.0.6
+              hash: 840445d0c20392cb1383a257b8818f90e42894ce
+              body: >
+                Update ghcr.io/balena-io-modules/confd-releases from 0.0.5 to
+                0.0.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: open-balena-base-18.0.18
+          title: ""
+          date: 2024-11-18T20:54:44.165Z
+  version: 2.28.60
+  title: ""
+  date: 2024-11-22T00:15:41.638Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v18.0.17
       hash: 7f0371a0f36f97af087fb7829e69fb48850bdd64
       body: |
@@ -361,12 +401,9 @@
         - commits:
             - subject: Empty commit to rebuild open-balena-base to fix CVE-2024-6387.
               hash: 4d7156be75e535ad5ab4a2bf2d574fde1b86d45c
-              body: >
-                Causes a rebuild of the open-balena-base to include
-                openssh-server
-
+              body: |
+                Causes a rebuild of the open-balena-base to include openssh-server
                 1:9.2p1-2+deb12u3 (OpenSSH_9.2p1 Debian-2+deb12u3) which fixes
-
                 [cve-2024-6387](https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt).
               footer:
                 Change-type: patch
@@ -1493,9 +1530,8 @@
 - commits:
     - subject: Revert minio release prior to deprecation of standalone filesystem
       hash: f28405b0fa540314ae8efa66a6944dba26d905d6
-      body: >
-        See:
-        https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
+      body: |
+        See: https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
       footer:
         Change-type: patch
         change-type: patch
