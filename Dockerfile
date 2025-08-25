@@ -1,6 +1,4 @@
-FROM balena/open-balena-base:19.1.2
-
-EXPOSE 80
+FROM balena/open-balena-base:19.1.2-s6-overlay
 
 VOLUME /export
 
@@ -32,13 +30,7 @@ RUN curl -fsSL -o /sbin/mc https://dl.min.io/client/mc/release/linux-${TARGETARC
 
 # systemd and minio config
 COPY config /usr/src/app/config
-COPY config/services/ /etc/systemd/system/
-
-# create-buckets
-COPY scripts/create-buckets.sh /sbin/create-buckets.sh
-RUN systemctl enable create-buckets.service
+COPY config/s6-overlay/ /etc/s6-overlay/
+RUN chmod +x /etc/s6-overlay/scripts/*
 
 COPY docker-hc /usr/src/app/
-
-# Enable Minio service
-RUN systemctl enable open-balena-s3.service
