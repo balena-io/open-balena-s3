@@ -1,8 +1,18 @@
-#!/bin/bash
+#!/usr/src/env bash
+# shellcheck disable=SC1090,SC2154
 
 set -e
 
-if [ -z "${BUCKETS}" ]; then
+workdir=/usr/src/app/
+envfile=/etc/docker.env
+
+cd "${workdir}" || exit 1
+
+set -a
+[[ -f "${envfile}" ]] && source "${envfile}"
+set +a
+
+if [[ -z "${BUCKETS}" ]]; then
     BUCKETS="${1:-}"
 fi
 
