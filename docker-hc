@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
 
-systemctl is-active open-balena-s3.service \
-  && mc ls localhost
+set -euo pipefail
+
+is_up() {
+	local service="$1"
+	local result
+	result="$(s6-svstat "/run/service/${service}" -o up)"
+	test "${result}" = "true"
+}
+
+is_up open-balena-s3
+mc ls localhost
