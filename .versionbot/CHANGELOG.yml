@@ -1,4 +1,20 @@
 - commits:
+    - subject: Switch to s6-overlay base image
+      hash: 360d69713535a4f4c2eeb944ff1f0df341391739
+      body: |
+        This allows running with reduced permissions and avoids
+        conflicts with hosts running cgroups v2.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 3.0.0
+  title: ""
+  date: 2025-09-04T13:30:58.843Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v19.2.1
       hash: 271daf754ab40fd86d36a677f262212329eb9e6f
       body: |
