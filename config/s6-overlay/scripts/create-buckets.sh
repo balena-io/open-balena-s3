@@ -4,7 +4,7 @@
 set -e
 
 # Redirect all future stdout/stderr to s6-log
-exec > >(exec s6-log -b p"create-buckets[$$]:" 1 || true) 2>&1
+exec > >(exec s6-log p"create-buckets[$$]:" 1 || true) 2>&1
 
 # Change to working directory
 cd /usr/src/app || exit 1
