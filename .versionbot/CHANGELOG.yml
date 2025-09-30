@@ -1,4 +1,39 @@
 - commits:
+    - subject: Disable s6-log blocking mode
+      hash: 26864f9e7987ad325d10186f424c309e6958c615
+      body: |
+        From the s6-log docs: https://skarnet.org/software/s6/s6-log.html
+
+        > By default, s6-log keeps reading from stdin even if its buffers
+        > still contain data. -b is safer, but may slow down your service;
+        > the default is faster, but may lead to unbound memory use if you
+        > have a lot of output to write to a slow file system.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Fix s6 command to check service status
+      hash: 2fc3622ddd00bad81675b7f4977530c82a1d5246
+      body: |
+        Argument order matters, and -u (or -o up) needs
+        to proceed the service path otherwise we get a verbose
+        output.
+
+        See https://skarnet.org/software/s6/s6-svstat.html
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 3.0.6
+  title: ""
+  date: 2025-09-30T13:09:34.042Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v20.0.3
       hash: 8d0045a49e12561f119c7bb1bd74c330c5d1fc6e
       body: |
