@@ -1,4 +1,19 @@
 - commits:
+    - subject: "fix: create-buckets.sh requires container env"
+      hash: f7d5b4969d967f418121183a77621acfc9e407e2
+      body: |
+        The confd env template is only used by the open-balena-s3 service.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 3.0.12
+  title: ""
+  date: 2025-10-17T13:54:09.780Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v20.1.4
       hash: 6011a0e30b3a3ff60fbc20521feab01bbcebdb4a
       body: |
