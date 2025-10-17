@@ -1,4 +1,20 @@
 - commits:
+    - subject: "Fix: Use source over load_env_file for BUCKETS env"
+      hash: 4df81ae0c5a9af2695a9f63e8cae0349c5646968
+      body: |
+        BUCKETS has escaped characters and load_env_file does not
+        remove the slashes but source does.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 3.0.13
+  title: ""
+  date: 2025-10-17T14:43:16.046Z
+- commits:
     - subject: "fix: create-buckets.sh requires container env"
       hash: f7d5b4969d967f418121183a77621acfc9e407e2
       body: |
