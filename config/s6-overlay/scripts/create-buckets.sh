@@ -11,7 +11,7 @@ cd /usr/src/app || exit 1
 
 # Load environment variables for this service
 source /etc/s6-overlay/scripts/functions.sh
-[[ -f "config/env" ]] && load_env_file "config/env"
+load_env_file "/etc/docker.env"
 
 if [[ -z "${BUCKETS}" ]]; then
     BUCKETS="${1:-}"
