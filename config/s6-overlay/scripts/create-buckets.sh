@@ -10,8 +10,7 @@ exec > >(exec s6-log p"create-buckets[$$]:" 1 || true) 2>&1
 cd /usr/src/app || exit 1
 
 # Load environment variables for this service
-source /etc/s6-overlay/scripts/functions.sh
-load_env_file "/etc/docker.env"
+source /etc/docker.env
 
 if [[ -z "${BUCKETS}" ]]; then
     BUCKETS="${1:-}"
