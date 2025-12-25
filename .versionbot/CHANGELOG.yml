@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update go to 1.24.0, minio to 2025-09-07
+      hash: ed5e7b9875c5646cf876fb7fc0b1b8a352926cee
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 3.0.17
+  title: ""
+  date: 2025-12-25T18:12:21.072Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v20.2.2
       hash: 7a420560937bd3b8d274ce656ad93baae2776f3f
       body: |
