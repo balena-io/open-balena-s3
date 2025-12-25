@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v20.2.4
+      hash: 6d1d6a4d904345cf0d6422eef460b23dff2afe4e
+      body: |
+        Update balena/open-balena-base from 20.2.2 to 20.2.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: Use flock instead of lockfile in critical sesion"
+              hash: c26ce0f5736ab6817abdcd60f78729502180399d
+              body: ""
+              footer: {}
+              author: Anton Belodedenko
+              nested: []
+          version: open-balena-base-20.2.4
+          title: ""
+          date: 2025-12-12T17:29:51.399Z
+        - commits:
+            - subject: Update Node.js to v24.12.0
+              hash: 1308020ca87b6124d664117b76a05e49b94b6d06
+              body: |
+                Update node from 24.11.1 to 24.12.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-20.2.3
+          title: ""
+          date: 2025-12-10T17:11:08.260Z
+  version: 3.0.18
+  title: ""
+  date: 2025-12-25T18:31:42.502Z
+- commits:
     - subject: Update go to 1.24.0, minio to 2025-09-07
       hash: ed5e7b9875c5646cf876fb7fc0b1b8a352926cee
       body: ""
