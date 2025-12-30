@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v20.2.5
+      hash: 025b006af47911592397ba599d4b4e825ac95e63
+      body: |
+        Update balena/open-balena-base from 20.2.4 to 20.2.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: DATA_HOST is requiredVar for balena-builder"
+              hash: 2bf14e1b161103992b30a348f81cd574ce9dac89
+              body: ""
+              footer: {}
+              author: Anton Belodedenko
+              nested: []
+          version: open-balena-base-20.2.5
+          title: ""
+          date: 2025-12-30T07:05:30.415Z
+  version: 3.0.19
+  title: ""
+  date: 2025-12-30T08:14:30.964Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v20.2.4
       hash: 6d1d6a4d904345cf0d6422eef460b23dff2afe4e
       body: |
