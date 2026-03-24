@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin product-os/flowzone action to a53cf4b
+      hash: 596b636e2319eb4b7eae071c037e7873aec7c017
+      body: |
+        Update product-os/flowzone
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 3.0.24
+  title: ""
+  date: 2026-03-24T18:40:34.627Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v21
       hash: b8ca12be9ee54eba85216334c984bac8d3e0b1b9
       body: |
