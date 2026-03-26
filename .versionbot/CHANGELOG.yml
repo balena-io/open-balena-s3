@@ -1,4 +1,16 @@
 - commits:
+    - subject: Revert flowzone pinning to master
+      hash: e51d2125b4cc1518608e5a37bd9a15bf10b774b2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 3.0.41
+  title: ""
+  date: 2026-03-26T17:23:46.148Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v21.0.11
       hash: 4ae96582dd8bb511324342b7b54cf3a2154c1145
       body: |
