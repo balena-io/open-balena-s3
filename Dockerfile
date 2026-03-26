@@ -1,4 +1,4 @@
-FROM balena/open-balena-base:21.0.8-s6-overlay
+FROM balena/open-balena-base:21.0.9-s6-overlay
 
 VOLUME /export
 
