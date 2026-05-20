@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v21.0.21
+      hash: 0e1d4c676f7d08bfed5e74a622f11a2af55e5e9a
+      body: |
+        Update balena/open-balena-base from 21.0.20 to 21.0.21
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update debian:trixie-20260518 Docker digest to 4ae6766
+              hash: 9e2fcd0e710d2b16071e6c2240ddd6496e4f9cd2
+              body: |
+                Update debian
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-21.0.21
+          title: ""
+          date: 2026-05-20T02:54:38.405Z
+  version: 3.0.51
+  title: ""
+  date: 2026-05-20T04:34:33.625Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v21.0.20
       hash: 3d15557adde1f07b89119437e1b94de25123289a
       body: |
