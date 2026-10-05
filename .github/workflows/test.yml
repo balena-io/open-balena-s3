@@ -1,0 +1,22 @@
+name: Storage upgrade tests
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Build runtime image
+        run: docker build -t open-balena-s3:test .
+      - name: Real volume upgrade and registry tests
+        env:
+          OB_S3_TEST_IMAGE: open-balena-s3:test
+          OB_S3_INTEGRATION: "1"
+          OB_S3_REGISTRY_INTEGRATION: "1"
+        run: python3 tests/integration.py
