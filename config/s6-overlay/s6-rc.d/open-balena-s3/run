@@ -11,6 +11,9 @@ cd /usr/src/app || exit 1
 
 # Load environment variables for this service
 source /etc/s6-overlay/scripts/functions.sh
+set -a
+source /etc/docker.env
+set +a
 [[ -f "config/env" ]] && load_env_file "config/env"
 
-exec /go/bin/minio server --address ":80" --console-address ":43697" /export
+exec python3 -u /usr/src/app/migration/bootstrap.py serve

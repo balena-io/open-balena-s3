@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC1091
 
-set -e
+set -euo pipefail
 
 # Redirect all future stdout/stderr to s6-log
 exec > >(exec s6-log p"create-buckets[$$]:" 1 || true) 2>&1
@@ -10,26 +10,9 @@ exec > >(exec s6-log p"create-buckets[$$]:" 1 || true) 2>&1
 cd /usr/src/app || exit 1
 
 # Load environment variables for this service
+set -a
 source /etc/docker.env
+set +a
 
-if [[ -z "${BUCKETS}" ]]; then
-    BUCKETS="${1:-}"
-fi
-
-# read the list of new buckets we wish to create...
-IFS=';' read -ra NEW_BUCKETS <<< "$BUCKETS"
-
-# pull the list of existing buckets...
-# - list the buckets in JSON
-# - extract the key value
-# - remove the last char, a slash in this case
-EXISTING_BUCKETS=($(mc ls --json localhost/ | jq .key -r | rev | cut -c 2- | rev))
-
-for bucket in "${NEW_BUCKETS[@]}"; do
-    echo "Create bucket: $bucket..."
-    if [[ ! " ${EXISTING_BUCKETS[@]} " =~ " ${bucket} " ]]; then
-        /sbin/mc mb "localhost/${bucket}"
-    else
-        echo "Bucket already exists: $bucket"
-    fi
-done
+export BUCKETS="${BUCKETS:-${1:-}}"
+exec python3 /usr/src/app/migration/bootstrap.py buckets
