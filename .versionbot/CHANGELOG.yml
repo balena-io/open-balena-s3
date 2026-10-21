@@ -1,4 +1,130 @@
 - commits:
+    - subject: Update balena/open-balena-base Docker tag to v22
+      hash: 9c54cbb62deb84046b012a5d40b10fcc64660e70
+      body: |
+        Update balena/open-balena-base from 21.0.35 to 22.0.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Node.js to v26.12.1
+              hash: c14db6469a6673e0316b51351c289c3100c92bf3
+              body: |
+                Update node from 26.12.0 to 26.12.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-22.0.5
+          title: ""
+          date: 2026-10-21T11:11:03.031Z
+        - commits:
+            - subject: Update debian:13 Docker digest to 4c25275
+              hash: 012c4e94107837ffc8afc9db56e2b4a319f81552
+              body: |
+                Update debian
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-22.0.4
+          title: ""
+          date: 2026-10-21T02:13:31.822Z
+        - commits:
+            - subject: Update Node.js to v26.12.0
+              hash: 4dd9f45bdeb3f6f2a4714ef2f1592ce6603beb35
+              body: |
+                Update node from 26.11.1 to 26.12.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-22.0.3
+          title: ""
+          date: 2026-10-14T16:11:48.722Z
+        - commits:
+            - subject: Update Node.js to v26.11.1
+              hash: 6ebabe6f5fe35b551d4196b9aa06225adaa52d7a
+              body: |
+                Update node from 26.11.0 to 26.11.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+            - subject: Update Node.js to v26.11.0
+              hash: 1f6a20d88987ecc5ef1a2522219269ccb983c5c8
+              body: |
+                Update node from 26.10.0 to 26.11.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-22.0.2
+          title: ""
+          date: 2026-10-08T01:38:25.454Z
+        - commits:
+            - subject: Update debian:13 Docker digest to 913f670
+              hash: 411e3088d4ff23ac9ef08d3a508a8bd10bdf4c26
+              body: |
+                Update debian
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-22.0.1
+          title: ""
+          date: 2026-10-06T03:16:09.683Z
+        - commits:
+            - subject: Update nodejs to 26.x
+              hash: c8c1938ee9c3e9d6ed02ddbe8ace6f6700284d40
+              body: |
+                https://balena.fibery.io/Work/Project/2985
+              footer:
+                Change-type: major
+                change-type: major
+              author: Pagan Gazzard
+              nested: []
+          version: open-balena-base-22.0.0
+          title: ""
+          date: 2026-09-23T15:17:14.355Z
+        - commits:
+            - subject: Update debian:13 Docker digest to 9cc0800
+              hash: 58886934d6fd56a8a57b6c3a12862fd48123029a
+              body: |
+                Update debian
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-21.0.37
+          title: ""
+          date: 2026-09-19T06:06:05.329Z
+        - commits:
+            - subject: Update debian:13 Docker digest to 181ecf0
+              hash: 3b50c96632d4be0a6800b4d29332a13955d4e8b7
+              body: |
+                Update debian
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: open-balena-base-21.0.36
+          title: ""
+          date: 2026-09-19T03:06:40.530Z
+  version: 3.0.67
+  title: ""
+  date: 2026-10-21T16:26:06.139Z
+- commits:
     - subject: Switch to pgsty/silo fork of minio
       hash: b9af897055d76941b5afd60e09a5f974502a3be4
       body: |
