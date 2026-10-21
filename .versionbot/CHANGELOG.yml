@@ -1,4 +1,17 @@
 - commits:
+    - subject: Switch to pgsty/silo fork of minio
+      hash: b9af897055d76941b5afd60e09a5f974502a3be4
+      body: |
+        https://balena.fibery.io/Work/Project/2938
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 3.0.66
+  title: ""
+  date: 2026-10-21T15:52:25.107Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v21.0.35
       hash: 729443085af6bfd7db1cb0f621aa1ef074e886c1
       body: |
