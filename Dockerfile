@@ -10,7 +10,7 @@ ENV GOPATH=/go
 
 # https://github.com/pgsty/silo/tags
 # renovate: datasource=github-tags depName=pgsty/silo versioning=regex:^RELEASE\.(?<major>\d{4})-(?<minor>\d{2})-(?<patch>\d{2})
-ENV SILO_VERSION=RELEASE.2026-10-18T00-00-00Z
+ENV SILO_VERSION=RELEASE.2026-10-25T00-00-00Z
 
 # https://github.com/pgsty/mc/tags
 # renovate: datasource=github-tags depName=pgsty/mc versioning=regex:^RELEASE\.(?<major>\d{4})-(?<minor>\d{2})-(?<patch>\d{2})
