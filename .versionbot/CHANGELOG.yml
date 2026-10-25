@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependency pgsty/silo to RELEASE.2026-10-25T00-00-00Z
+      hash: a1c4c7a773427fa39944615d47654768ad89e890
+      body: >
+        Update pgsty/silo from RELEASE.2026-10-18T00-00-00Z to
+        RELEASE.2026-10-25T00-00-00Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 3.0.69
+  title: ""
+  date: 2026-10-25T17:09:03.022Z
+- commits:
     - subject: Update dependency pgsty/mc to RELEASE.2026-10-25T00-00-00Z
       hash: 0a636c583e797bb876374294f7cc897b6b4fc2d3
       body: >
