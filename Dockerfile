@@ -14,7 +14,7 @@ ENV SILO_VERSION=RELEASE.2026-10-25T00-00-00Z
 
 # https://github.com/pgsty/mc/tags
 # renovate: datasource=github-tags depName=pgsty/mc versioning=regex:^RELEASE\.(?<major>\d{4})-(?<minor>\d{2})-(?<patch>\d{2})
-ENV MC_VERSION=RELEASE.2026-10-25T00-00-00Z
+ENV MC_VERSION=RELEASE.2026-10-26T00-00-00Z
 
 ENV PATH=${PATH}:/usr/local/go/bin
 
