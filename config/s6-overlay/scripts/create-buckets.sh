@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# shellcheck disable=SC1091
+#!/command/with-contenv bash
 
 set -e
 
@@ -8,9 +7,6 @@ exec > >(exec s6-log p"create-buckets[$$]:" 1 || true) 2>&1
 
 # Change to working directory
 cd /usr/src/app || exit 1
-
-# Load environment variables for this service
-source /etc/docker.env
 
 if [[ -z "${BUCKETS}" ]]; then
     BUCKETS="${1:-}"
