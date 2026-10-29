@@ -13,4 +13,4 @@ cd /usr/src/app || exit 1
 source /etc/s6-overlay/scripts/functions.sh
 [[ -f "config/env" ]] && load_env_file "config/env"
 
-exec /go/bin/minio server --address ":80" --console-address ":43697" /export
+exec /go/bin/silo server --address ":80" --console-address ":43697" /export
