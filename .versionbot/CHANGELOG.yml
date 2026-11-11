@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependency pgsty/silo to RELEASE.2026-11-12T00-00-00Z
+      hash: 28745c5447fafa47ab1d2343934aacd440ff2c53
+      body: >
+        Update pgsty/silo from RELEASE.2026-11-09T00-00-00Z to
+        RELEASE.2026-11-12T00-00-00Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 3.0.81
+  title: ""
+  date: 2026-11-11T19:33:18.786Z
+- commits:
     - subject: Update balena/open-balena-base Docker tag to v22.1.4
       hash: d5fccde17eff0e12b7381628deaa874975398973
       body: |
