@@ -1,0 +1,40 @@
+services:
+  sut:
+    image: sut:latest
+    build: .
+    environment:
+      S3_MINIO_ACCESS_KEY: testaccess
+      S3_MINIO_SECRET_KEY: 'test secret #1'
+      BUCKETS: test-a;test-b
+    command:
+      - /command/with-contenv
+      - bash
+      - -c
+      - |
+        set -euo pipefail
+        fail() { echo "FAIL: $$*"; exit 1; }
+
+        for _ in $$(seq 60); do /usr/src/app/docker-hc >/dev/null 2>&1 && break; sleep 1; done
+        /usr/src/app/docker-hc >/dev/null || fail "docker-hc"
+
+        s6-rc -a list | grep -qx create-buckets || fail "create-buckets is not up"
+
+        # A crash-looping service is up only briefly between restarts.
+        sleep 5
+        read -r up secs < <(s6-svstat -o up,updownfor /run/service/open-balena-s3)
+        [[ "$${up}" == true && "$${secs}" -ge 5 ]] || fail "open-balena-s3 up=$${up} for $${secs}s"
+
+        pid="$$(s6-svstat -o pid /run/service/open-balena-s3)"
+        silo_env() { tr '\0' '\n' < "/proc/$${pid}/environ" | sed -n "s/^$$1=//p"; }
+        [[ "$$(silo_env MINIO_ROOT_USER)" == "$${S3_MINIO_ACCESS_KEY}" ]] || fail "MINIO_ROOT_USER"
+        [[ "$$(silo_env MINIO_ROOT_PASSWORD)" == "$${S3_MINIO_SECRET_KEY}" ]] || fail "MINIO_ROOT_PASSWORD"
+
+        for bucket in test-a test-b; do
+          mc ls "localhost/$${bucket}" >/dev/null || fail "bucket $${bucket}"
+        done
+
+        if mc alias set default http://127.0.0.1 minioadmin minioadmin >/dev/null 2>&1; then
+          fail "silo accepts the default credentials"
+        fi
+
+        echo PASS
