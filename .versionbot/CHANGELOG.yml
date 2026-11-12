@@ -1,4 +1,37 @@
 - commits:
+    - subject: Use with-contenv for S3 services
+      hash: 1598c9a094d1f34a5713be46299adaaee34d6c92
+      body: |
+        open-balena-base 22.1 exports the container env before s6 starts, so
+        with-contenv services see it directly. The run script now sets
+        MINIO_ROOT_* from S3_MINIO_* itself, which drops the env.tmpl render and
+        load_env_file. create-buckets no longer sources /etc/docker.env.
+      footer:
+        See: https://github.com/balena-io-modules/open-balena-base/pull/483
+        see: https://github.com/balena-io-modules/open-balena-base/pull/483
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Fix silo binary path in S3 run script
+      hash: c94b66ade5f27f0bbb9c2a99542a7a469c4d07ae
+      body: |
+        b9af897 switched to the pgsty/silo fork and builds /go/bin/silo, but
+        the run script still exec'd /go/bin/minio, so the S3 service could not
+        start.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 3.0.83
+  title: ""
+  date: 2026-11-12T14:01:47.956Z
+- commits:
     - subject: Update dependency pgsty/mc to RELEASE.2026-11-12T00-00-00Z
       hash: e518f36b7f563d7ec177a67980a4c2facc001aaf
       body: >
