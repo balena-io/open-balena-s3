@@ -1,4 +1,4 @@
-FROM balena/open-balena-base:22.2.0-s6-overlay@sha256:164968f29fcd277f60e9f4e4c5e3811c6da8da3ce814932b174f173ff2d696a3
+FROM balena/open-balena-base:22.2.2-s6-overlay@sha256:04d72b2c2f1f355c667186a586412c4969885d9ef508d796c6e1d5e6d0ba9ae6
 
 VOLUME /export
 
